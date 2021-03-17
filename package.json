@@ -1,0 +1,30 @@
+{
+  "name": "bnr",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "env-cmd -f ./.develop.env nodemon --exec babel-node src/index.js",
+    "test": "env-cmd -f ./.test.env mocha -r esm --exit"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.13.10",
+    "@babel/node": "^7.13.10",
+    "@babel/preset-env": "^7.13.10",
+    "esm": "^3.2.25",
+    "nodemon": "^2.0.7"
+  },
+  "dependencies": {
+    "chai": "^4.3.4",
+    "chai-http": "^4.3.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "env-cmd": "^10.1.0",
+    "express": "^4.17.1",
+    "mocha": "^8.3.2",
+    "uuid": "^8.3.2"
+  }
+}
